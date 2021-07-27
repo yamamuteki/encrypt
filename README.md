@@ -7,12 +7,13 @@ This is a learning exsample for encrypt and decrypt with RSA by Python.
 ```
 git clone git@github.com:yamamuteki/encrypt.git
 cd encrypt
+pip install -r requirements.txt
+ssh-keygen -f rsa_key
 ```
 
 ### Use with local Python
 
 ```
-pip install -r requirements.txt
 echo 'hello world!' | python encrypt.py | python decrypt.py
 ```
 
