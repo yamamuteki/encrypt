@@ -8,7 +8,7 @@ This is a learning exsample for encrypt and decrypt with RSA by Python.
 git clone git@github.com:yamamuteki/encrypt.git
 cd encrypt
 pip install -r requirements.txt
-ssh-keygen -f rsa_key
+ssh-keygen -f rsa_key -t rsa -b 4096
 ```
 
 ### Use with local Python
