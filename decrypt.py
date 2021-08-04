@@ -9,6 +9,6 @@ with open('rsa_key', 'rb') as f:
     private_key = RSA.import_key(f.read())
 
 decipher_rsa = PKCS1_OAEP.new(private_key)
-msg = decipher_rsa.decrypt(ciphertext).decode("utf-8")
+text = decipher_rsa.decrypt(ciphertext).decode("utf-8")
 
-print(msg)
+print(text)
